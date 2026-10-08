@@ -20,11 +20,11 @@ print("""
 """)
 
 print("Select One: ")
-menu = int(input())
+menu = input()
 
 match menu:
 
-    case 1:
+    case "1":
         print("""
           
           Phone Book
@@ -44,35 +44,35 @@ match menu:
       """)
 
         print("Select your option: ")
-        phone_book = int(input())
+        phone_book = input()
 
         match phone_book:
 
-            case 1:
+            case "1":
                 print("Search")
 
-            case 2:
+            case "2":
                 print("Service Nos.")
 
-            case 3:
+            case "3":
                 print("Add name")
 
-            case 4:
+            case '4':
                 print("Erase")
 
-            case 5:
+            case "5":
                 print("Edit")
 
-            case 6:
+            case "6":
                 print("Copy")
 
-            case 7:
+            case "7":
                 print("Assign tone")
 
-            case 8:
+            case "8":
                 print("Send b'card")
 
-            case 9:
+            case "9":
                 print("""
           
                      Options
@@ -84,32 +84,32 @@ match menu:
               """)
 
                 print("Select one option: ")
-                options = int(input())
+                options = input()
 
                 match options:
 
-                    case 1:
+                    case "1":
                         print("Memory in use")
 
-                    case 2:
+                    case "2":
                         print("Type of view")
 
-                    case 3:
+                    case "3":
                         print("Memory status")
 
                     case _:
                         print("Try again.......")
 
-            case 10:
+            case "10":
                 print("Speed dials")
 
-            case 11:
+            case "11":
                 print("Voice tags")
 
             case _:
                 print("Try again ......")
 
-    case 2:
+    case "2":
         print("""
           
               Messages
@@ -128,29 +128,29 @@ match menu:
 """)
 
         print("Select one option: ")
-        messages = int(input())
+        messages = input()
 
         match messages:
 
-            case 1:
+            case "1":
                 print("Write messages")
 
-            case 2:
+            case "2":
                 print("Inbox")
 
-            case 3:
+            case "3":
                 print("Outbox")
 
-            case 4:
+            case "4":
                 print("Picture messages")
 
-            case 5:
+            case "5":
                 print("Templates")
 
-            case 6:
+            case "6":
                 print("Smileys")
 
-            case 7:
+            case "7":
                 print("""
                 
                             Message settings
@@ -161,11 +161,11 @@ match menu:
               """)
 
                 print("Select one option: ")
-                message_settings = int(input())
+                message_settings = input()
 
                 match message_settings:
 
-                    case 1:
+                    case "1":
                         print("""
                  
                               Set 1
@@ -177,23 +177,23 @@ match menu:
                     """)
 
                         print("Select one option: ")
-                        set1 = int(input())
+                        set1 = input()
 
                         match set1:
 
-                            case 1:
+                            case "1":
                                 print("Message centre number")
 
-                            case 2:
+                            case "2":
                                 print("Messages sent as")
 
-                            case 3:
+                            case "3":
                                 print("Message validity")
 
                             case _:
                                 print("Try again.......")
 
-                    case 2:
+                    case "2":
                         print("""
                  
                                Common
@@ -205,38 +205,38 @@ match menu:
                     """)
 
                         print("Select one option: ")
-                        common = int(input())
+                        common = input()
 
                         match common:
 
-                            case 1:
+                            case "1":
                                 print("Delivery reports")
 
-                            case 2:
+                            case "2":
                                 print("Reply via same centre")
 
-                            case 3:
+                            case "3":
                                 print("Character support")
 
                             case _:
                                 print("Try again.......")
 
-            case 8:
+            case "8":
                 print("Info service")
 
-            case 9:
+            case "9":
                 print("Voice mailbox number")
 
-            case 10:
+            case "10":
                 print("Service command editor")
 
             case _:
                 print("Try again ......")
 
-    case 3:
+    case "3":
         print("Chat")
 
-    case 4:
+    case "4":
         print("""
                        
                      Call Register
@@ -253,23 +253,23 @@ match menu:
 """)
 
         print("Select one option: ")
-        call_register = int(input())
+        call_register = input()
 
         match call_register:
 
-            case 1:
+            case "1":
                 print("Missed calls")
 
-            case 2:
+            case "2":
                 print("Received calls")
 
-            case 3:
+            case "3":
                 print("Dialled numbers")
 
-            case 4:
+            case "4":
                 print("Erase recent call lists")
 
-            case 5:
+            case "5":
                 print("""
                 
                           Show call duration
@@ -283,29 +283,29 @@ match menu:
                 """)
 
                 print("Select one option: ")
-                show_call_duration = int(input())
+                show_call_duration = input()
 
                 match show_call_duration:
 
-                    case 1:
+                    case "1":
                         print("Last call duration")
 
-                    case 2:
+                    case "2":
                         print("All calls’ duration")
 
-                    case 3:
+                    case "3":
                         print("Received calls’ duration")
 
-                    case 4:
+                    case "4":
                         print("Dialled calls’ duration")
 
-                    case 5:
+                    case "5":
                         print("Clear timers")
 
                     case _:
                         print("Try again.......")
 
-            case 6:
+            case '6':
                 print("""
                 
                           Show call costs
@@ -317,23 +317,23 @@ match menu:
               """)
 
                 print("Select one option: ")
-                show_call_costs = int(input())
+                show_call_costs = input()
 
                 match show_call_costs:
 
-                    case 1:
+                    case "1":
                         print("Last call cost")
 
-                    case 2:
+                    case "2":
                         print("All calls’ cost")
 
-                    case 3:
+                    case "3":
                         print("Clear counters")
 
                     case _:
                         print("Try again.......")
 
-            case 7:
+            case "7":
                 print("""
                 
                           Call cost settings
@@ -344,26 +344,26 @@ match menu:
               """)
 
                 print("Select one option: ")
-                call_cost_settings = int(input())
+                call_cost_settings = input()
 
                 match call_cost_settings:
 
-                    case 1:
+                    case "1":
                         print("Call cost limit")
 
-                    case 2:
+                    case "2":
                         print("Show costs in")
 
                     case _:
                         print("Try again.......")
 
-            case 8:
+            case "8":
                 print("Prepaid credit")
 
             case _:
                 print("Try again ......")
 
-    case 5:
+    case "5":
         print("""
                   
                          Tones
@@ -380,38 +380,38 @@ match menu:
 """)
 
         print("Select one option: ")
-        tones = int(input())
+        tones = input()
 
         match tones:
 
-            case 1:
+            case "1":
                 print("Ringing tone")
 
-            case 2:
+            case "2":
                 print("Ringing volume")
 
-            case 3:
+            case "3":
                 print("Incoming call alert")
 
-            case 4:
+            case "4":
                 print("Message alert tone")
 
-            case 5:
+            case "5":
                 print("Keypad tones")
 
-            case 6:
+            case "6":
                 print("Warning tones")
 
-            case 7:
+            case "7":
                 print("Vibrating alert")
 
-            case 8:
+            case "8":
                 print("Screen saver")
 
             case _:
                 print("Try again ......")
 
-    case 6:
+    case "6":
         print("""
               
                     Settings
@@ -424,11 +424,11 @@ match menu:
 """)
 
         print("Select one option: ")
-        settings = int(input())
+        settings = input()
 
         match settings:
 
-            case 1:
+            case "1":
                 print("""
                 
                         Call settings
@@ -443,32 +443,32 @@ match menu:
               """)
 
                 print("Select one option: ")
-                call_settings = int(input())
+                call_settings = input()
 
                 match call_settings:
 
-                    case 1:
+                    case "1":
                         print("Automatic redial")
 
-                    case 2:
+                    case "2":
                         print("Speed dialling")
 
-                    case 3:
+                    case "3":
                         print("Call waiting options")
 
-                    case 4:
+                    case "4":
                         print("Own number sending")
 
-                    case 5:
+                    case "5":
                         print("Phone line in use")
 
-                    case 6:
+                    case "6":
                         print("Automatic answer")
 
                     case _:
                         print("Try again.......")
 
-            case 2:
+            case "2":
                 print("""
                 
                           Phone settings  
@@ -482,29 +482,29 @@ match menu:
               """)
 
                 print("Select one option: ")
-                phone_settings = int(input())
+                phone_settings = input()
 
                 match phone_settings:
 
-                    case 1:
+                    case "1":
                         print("Language")
 
-                    case 2:
+                    case "2":
                         print("Cell info display")
 
-                    case 3:
+                    case "3":
                         print("Welcome note")
 
-                    case 4:
+                    case "4":
                         print("Network selection")
 
-                    case 5:
+                    case "5":
                         print("Confirm SIM service actions")
 
                     case _:
                         print("Try again.......")
 
-            case 3:
+            case "3":
                 print("""
                 
                         Security settings
@@ -519,41 +519,41 @@ match menu:
                 """)
 
                 print("Select one option: ")
-                security_settings = int(input())
+                security_settings = input()
 
                 match security_settings:
 
-                    case 1:
+                    case "1":
                         print("PIN code request")
 
-                    case 2:
+                    case "2":
                         print("Call barring service")
 
-                    case 3:
+                    case "3":
                         print("Fixed dialling")
 
-                    case 4:
+                    case "4":
                         print("Closed user group")
 
-                    case 5:
+                    case "5":
                         print("Security level")
 
-                    case 6:
+                    case "6":
                         print("Change access codes")
 
                     case _:
                         print("Try again.......")
 
-            case 4:
+            case "4":
                 print("Restore factory settings")
 
             case _:
                 print("Try again ......")
 
-    case 7:
+    case "7":
         print("Call Divert")
 
-    case 8:
+    case "8":
         print("""
               
                     Music
@@ -566,35 +566,35 @@ match menu:
 """)
 
         print("Select one option: ")
-        music = int(input())
+        music = input()
 
         match music:
 
-            case 1:
+            case "1":
                 print("Music player")
 
-            case 2:
+            case "2":
                 print("Radio")
 
-            case 3:
+            case "3":
                 print("Recorder")
 
-            case 4:
+            case "4":
                 print("Track list")
 
             case _:
                 print("Try again ......")
 
-    case 9:
+    case "9":
         print("Games")
 
-    case 10:
+    case "10":
         print("Calculator")
 
-    case 11:
+    case "11":
         print("Reminders")
 
-    case 12:
+    case "12":
         print("""
                         
                         Clock
@@ -609,38 +609,38 @@ match menu:
 """)
 
         print("Select one option: ")
-        clock = int(input())
+        clock = input()
 
         match clock:
 
-            case 1:
+            case "1":
                 print("Alarm clock")
 
-            case 2:
+            case "2":
                 print("Clock settings")
 
-            case 3:
+            case "3":
                 print("Date setting")
 
-            case 4:
+            case "4":
                 print("Stopwatch")
 
-            case 5:
+            case "5":
                 print("Countdown timer")
 
-            case 6:
+            case "6":
                 print("Auto update of date and time")
 
             case _:
                 print("Try again ......")
 
-    case 13:
+    case "13":
         print("Profiles")
 
-    case 14:
+    case "14":
         print("Services")
 
-    case 15:
+    case "15":
         print("SIM services")
 
     case _:
